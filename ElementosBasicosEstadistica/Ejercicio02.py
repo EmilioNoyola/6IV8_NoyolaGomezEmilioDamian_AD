@@ -61,15 +61,15 @@ margen_utilidad_por_sucursal = (ventas_por_sucursal - deudas_por_sucursal) / ven
 
 fig, ax1 = plt.subplots(figsize=(10, 5))
 
-ax1.bar(deudas_por_sucursal.index, deudas_por_sucursal, color="purple", label="Deuda Total")
+ax1.bar(deudas_por_sucursal.index, deudas_por_sucursal, color="#0f2b48", label="Deuda Total")
 ax1.set_xlabel("Sucursal")
-ax1.set_ylabel("Deuda Total", color="purple")
-ax1.tick_params(axis="y", labelcolor="purple")
+ax1.set_ylabel("Deuda Total", color="#0f2b48")
+ax1.tick_params(axis="y", labelcolor="#0f2b48")
 
 ax2 = ax1.twinx()
-ax2.plot(margen_utilidad_por_sucursal.index, margen_utilidad_por_sucursal, marker="o", linestyle="--", color="green", label="Margen de Utilidad")
-ax2.set_ylabel("Margen de Utilidad (%)", color="green")
-ax2.tick_params(axis="y", labelcolor="green")
+ax2.plot(margen_utilidad_por_sucursal.index, margen_utilidad_por_sucursal, marker="o", linestyle="--", color="#38b6ff", label="Margen de Utilidad")
+ax2.set_ylabel("Margen de Utilidad (%)", color="#38b6ff")
+ax2.tick_params(axis="y", labelcolor="#38b6ff")
 
 plt.title("Deuda Total por Sucursal vs Margen de Utilidad")
 fig.tight_layout()
