@@ -29,11 +29,11 @@ def analizar_distancias(distancias, nombre_metrica):
 
 # Definimos las coordenadas de los puntos
 puntos = {
-    'Punto A': (1, 1),
-    'Punto B': (1, 5),
-    'Punto C': (7, 1),
-    'Punto D': (3, 3),
-    'Punto E': (4, 8),
+    'Punto A': (2, 3),
+    'Punto B': (5, 4),
+    'Punto C': (1, 1),
+    'Punto D': (6, 7),
+    'Punto E': (3, 5),
     'Punto F': (8, 2),
     'Punto G': (4, 6),
     'Punto H': (2, 1)
@@ -68,3 +68,5 @@ print(distancias_chebyshev.fillna('-'))
 analizar_distancias(distancias_euclidiana, 'Euclidiana')
 analizar_distancias(distancias_manhattan, 'Manhattan')
 analizar_distancias(distancias_chebyshev, 'Chebyshev')
+
+plt.show()
